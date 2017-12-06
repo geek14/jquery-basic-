@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+	var a=$("#name").val();
+        $("#a").text(a);
+		
+	var b=$('input[name=gender]:checked').val();
+	$("#b").text(b);
+		
+		var c=$("#textarea").val();
+        $("#c").text(c);
+		
+		var d=$('input[name=box]:checked').val();
+	$("#d").text(d);
+		var e=$('#con option:selected').text();
+		$("#e").text(e);
+		
+    });
+});
+</script>
+</script>
+</head>
+<body>
+
+
+   Name: <input type="text" name="fname" id="name"><br>
+   Gender: <input type="radio" name="gender" value="male" checked> Male
+      <input type="radio" name="gender" value="female"> Female<br>
+   Address: <textarea id="textarea" rows="4" cols="50">
+</textarea></br>
+   Handicapped:  <input type="checkbox" name="box" value="no" checked>no
+                <input type="checkbox" name="box" value="yes">yes<br>
+  country: <select name="Country" id="con">
+  <option value="india">India</option>
+  <option value="usa">USA</option>
+  <option value="uae">UAE</option>
+  <option value="gypsy">GYPSYSOUL</option>
+</select> </br>
+				
+				
+  <button  value="Submit" id="button">submit </button>
+
+ Message is: <p>
+<div>
+<p id="a"></p>
+<p id="b"></p>
+<p id="c"></p>
+<p id ="d"></p>
+<p id ="e"></p>
+
+
+
+</div>
+</p>
+
+</body>
+</html>
